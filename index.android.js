@@ -306,6 +306,21 @@ class RenderScene extends Component{
     }
 }
 
+
+import CommonView from './CommonView';
+
+class CommonViewComponent extends Component{
+
+    render(){
+        return(
+            <CommonView/>
+        );
+    }
+
+
+}
+
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -336,4 +351,4 @@ const styles = StyleSheet.create({
 /**
  *  注册应用，将应用作为整体注册，而非分组件注册
  */
-AppRegistry.registerComponent('ReactNativeDemo', () => RenderScene);
+AppRegistry.registerComponent('ReactNativeDemo', () => CommonViewComponent);
